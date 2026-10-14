@@ -1,0 +1,449 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 890 205" width="890" height="205" role="img" aria-label="Distribuição de Commits">
+  <title>Distribuição de Commits por Hora e Dia da Semana</title>
+  <style>
+    
+    :root {
+      --bg: #0a0e14;
+      --surface: #0d1117;
+      --surface-subtle: #161b22;
+      --border: #30363d;
+      --border-subtle: #21262d;
+      --text: #e6edf3;
+      --text-sec: #8b949e;
+      --text-ter: #6e7681;
+      --accent: #00e5ff;
+      --accent-subtle: rgba(0, 229, 255, 0.12);
+      --accent-glow: rgba(0, 229, 255, 0.25);
+      --accent-sec: #7c5cff;
+      --accent-sec-subtle: rgba(124, 92, 255, 0.12);
+      --success: #3fb950;
+      --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    text {
+      font-family: var(--font-mono);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Pulse animation for status dots */
+    @keyframes pulse-glow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.45;
+        transform: scale(0.85);
+      }
+    }
+
+    .pulse {
+      transform-origin: center;
+      animation: pulse-glow 3.5s ease-in-out infinite;
+    }
+
+    /* Staggered entrance reveal */
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Stroke draw effect */
+    @keyframes draw-line {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /* Very subtle rare glitch (1x every 8s, 0.3s duration) */
+    @keyframes subtle-glitch {
+      0%, 96%, 100% {
+        transform: translate(0, 0);
+        opacity: 1;
+        text-shadow: none;
+      }
+      97% {
+        transform: translate(-1.5px, 0.5px);
+        text-shadow: 1px 0 var(--accent), -1px 0 var(--accent-sec);
+      }
+      98% {
+        transform: translate(1.5px, -0.5px);
+        text-shadow: -1px 0 var(--accent), 1px 0 var(--accent-sec);
+      }
+      99% {
+        transform: translate(0, 0);
+        text-shadow: none;
+      }
+    }
+
+    .glitch-text {
+      display: inline-block;
+      animation: subtle-glitch 8s infinite ease-in-out;
+    }
+
+    /* Scanline traversing effect */
+    @keyframes scanline-sweep {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.6;
+      }
+      90% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(300px);
+        opacity: 0;
+      }
+    }
+
+    .scanline {
+      animation: scanline-sweep 7s linear infinite;
+    }
+
+    /* Traveling light dot */
+    @keyframes travel-dot {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.9;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateX(1100px);
+        opacity: 0;
+      }
+    }
+
+    /* Cursor blink */
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    .cursor {
+      animation: blink 1.1s infinite steps(1);
+    }
+
+    /* Accessibility: prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, .pulse, .fade-in, .glitch-text, .scanline, .cursor, .animated-stroke {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        stroke-dashoffset: 0 !important;
+        transform: none !important;
+      }
+    }
+  
+    .chart-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      fill: var(--text-sec);
+    }
+  </style>
+  
+    <defs>
+      <!-- Cyberpunk Radial Ambient Glow -->
+      <radialGradient id="ambientGlow" cx="80%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#7c5cff" stop-opacity="0.12" />
+        <stop offset="100%" stop-color="#0a0e14" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Linear Accent Accent Line Gradient -->
+      <linearGradient id="cyanLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00e5ff" stop-opacity="0" />
+        <stop offset="30%" stop-color="#00e5ff" stop-opacity="0.9" />
+        <stop offset="70%" stop-color="#7c5cff" stop-opacity="0.9" />
+        <stop offset="100%" stop-color="#7c5cff" stop-opacity="0" />
+      </linearGradient>
+
+      <!-- Subtle Card Header Gradient -->
+      <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#161b22" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#0d1117" stop-opacity="0.95" />
+      </linearGradient>
+
+      <!-- Scanline Pattern -->
+      <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="100" y2="0" stroke="rgba(110, 118, 129, 0.06)" stroke-width="1" />
+      </pattern>
+
+      <!-- Subtle Dot Matrix Grid -->
+      <pattern id="cyberGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+        <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(110, 118, 129, 0.06)" stroke-width="0.75" />
+      </pattern>
+    </defs>
+  
+
+  
+    <!-- Card Frame -->
+    <rect x="0" y="0" width="890" height="205" rx="12" fill="#0d1117" stroke="#30363d" stroke-width="1.2" />
+    <rect x="1" y="1" width="888" height="203" rx="11" fill="url(#ambientGlow)" />
+    <rect x="4" y="4" width="882" height="197" rx="10" fill="url(#cyberGrid)" />
+    
+    <g class="corner-brackets" stroke="#00e5ff" stroke-width="1.5" fill="none">
+      <!-- Top Left -->
+      <path d="M 2 10 L 2 2 L 10 2" />
+      <!-- Top Right -->
+      <path d="M 880 2 L 888 2 L 888 10" />
+      <!-- Bottom Left -->
+      <path d="M 2 195 L 2 203 L 10 203" />
+      <!-- Bottom Right -->
+      <path d="M 880 203 L 888 203 L 888 195" />
+    </g>
+  
+
+    
+      <!-- Card Header Line -->
+      <line x1="16" y1="38" x2="874" y2="38" stroke="#21262d" stroke-width="1" />
+    
+
+    
+      <text x="20" y="26" fill="#e6edf3" font-size="14" font-weight="700" letter-spacing="1">
+        DISTRIBUIÇÃO TEMPORAL // HORÁRIO DE BRASÍLIA
+      </text>
+    
+
+    
+      <g transform="translate(870, 22)">
+        <text x="-10" y="3" fill="#8b949e" font-size="11" font-weight="600" text-anchor="end" letter-spacing="0.5">
+          AMERICA/SAO_PAULO
+        </text>
+        <circle cx="0" cy="0" r="4" fill="#8b949e" class="" />
+        <circle cx="0" cy="0" r="6" fill="#8b949e" opacity="0.3" class="" />
+      </g>
+    
+  
+
+  <!-- Subheaders -->
+  <text x="36" y="58" class="chart-label">HORÁRIO DO DIA (00h - 23h)</text>
+  <text x="580" y="58" class="chart-label">DIA DA SEMANA</text>
+
+  <!-- Divider between charts -->
+  <line x1="535" y1="52" x2="535" y2="175" stroke="#21262d" stroke-width="1" stroke-dasharray="2 4" />
+
+  <!-- Base Grid Lines -->
+  <line x1="36" y1="145" x2="512" y2="145" stroke="#21262d" stroke-width="1" />
+  <line x1="580" y1="145" x2="846" y2="145" stroke="#21262d" stroke-width="1" />
+
+  <!-- Hours Bars -->
+  <g class="fade-in">
+    
+      <g>
+        <rect x="36" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>0h: 0 commits</title>
+        <text x="43" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">0h</text>
+      </g>
+    
+      <g>
+        <rect x="56" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>1h: 0 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="76" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>2h: 0 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="96" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>3h: 0 commits</title>
+        <text x="103" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">3h</text>
+      </g>
+    
+      <g>
+        <rect x="116" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>4h: 0 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="136" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.2" />
+        <title>5h: 0 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="156" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>6h: 2 commits</title>
+        <text x="163" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">6h</text>
+      </g>
+    
+      <g>
+        <rect x="176" y="140" width="14" height="5" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>7h: 4 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="196" y="130" width="14" height="15" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>8h: 12 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="216" y="123" width="14" height="22" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>9h: 18 commits</title>
+        <text x="223" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">9h</text>
+      </g>
+    
+      <g>
+        <rect x="236" y="118" width="14" height="27" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>10h: 22 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="256" y="122" width="14" height="23" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>11h: 19 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="276" y="128" width="14" height="17" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>12h: 14 commits</title>
+        <text x="283" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">12h</text>
+      </g>
+    
+      <g>
+        <rect x="296" y="115" width="14" height="30" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>13h: 25 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="316" y="106" width="14" height="39" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>14h: 32 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="336" y="97" width="14" height="48" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>15h: 40 commits</title>
+        <text x="343" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">15h</text>
+      </g>
+    
+      <g>
+        <rect x="356" y="87" width="14" height="58" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>16h: 48 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="376" y="78" width="14" height="67" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>17h: 55 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="396" y="70" width="14" height="75" rx="3" fill="#00e5ff" opacity="1" />
+        <title>18h: 62 commits</title>
+        <text x="403" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">18h</text>
+      </g>
+    
+      <g>
+        <rect x="416" y="75" width="14" height="70" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>19h: 58 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="436" y="94" width="14" height="51" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>20h: 42 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="456" y="120" width="14" height="25" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>21h: 21 commits</title>
+        <text x="463" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">21h</text>
+      </g>
+    
+      <g>
+        <rect x="476" y="135" width="14" height="10" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>22h: 8 commits</title>
+        
+      </g>
+    
+      <g>
+        <rect x="496" y="142" width="14" height="3" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>23h: 2 commits</title>
+        
+      </g>
+    
+  </g>
+
+  <!-- Day Bars -->
+  <g class="fade-in">
+    
+      <g>
+        <rect x="580" y="119" width="26" height="26" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Dom: 32 commits</title>
+        <text x="593" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Dom</text>
+      </g>
+    
+      <g>
+        <rect x="618" y="90" width="26" height="55" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Seg: 68 commits</title>
+        <text x="631" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Seg</text>
+      </g>
+    
+      <g>
+        <rect x="656" y="85" width="26" height="60" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Ter: 74 commits</title>
+        <text x="669" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Ter</text>
+      </g>
+    
+      <g>
+        <rect x="694" y="78" width="26" height="67" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Qua: 82 commits</title>
+        <text x="707" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Qua</text>
+      </g>
+    
+      <g>
+        <rect x="732" y="73" width="26" height="72" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Qui: 88 commits</title>
+        <text x="745" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Qui</text>
+      </g>
+    
+      <g>
+        <rect x="770" y="70" width="26" height="75" rx="3" fill="#00e5ff" stroke="#21262d" stroke-width="1" />
+        <title>Sex: 92 commits</title>
+        <text x="783" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Sex</text>
+      </g>
+    
+      <g>
+        <rect x="808" y="104" width="26" height="41" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Sáb: 50 commits</title>
+        <text x="821" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Sáb</text>
+      </g>
+    
+  </g>
+</svg>

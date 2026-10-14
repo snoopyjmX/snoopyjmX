@@ -1,0 +1,75 @@
+{
+  "user": "snoopyjmX",
+  "generatedAt": "2026-10-14T20:00:00-03:00",
+  "isPlaceholder": false,
+  "summary": {
+    "totalCommitsYear": 486,
+    "totalPRs": 18,
+    "totalIssues": 7,
+    "totalStars": 12,
+    "totalRepos": {
+      "total": 14,
+      "public": 9,
+      "private": 5
+    },
+    "currentStreak": 6,
+    "longestStreak": 24
+  },
+  "languages": [
+    { "name": "TypeScript", "bytes": 492000, "color": "#3178c6", "percent": 48.5 },
+    { "name": "JavaScript", "bytes": 245000, "color": "#f7df1e", "percent": 24.1 },
+    { "name": "SQL", "bytes": 142000, "color": "#e38c00", "percent": 14.0 },
+    { "name": "Docker", "bytes": 78000, "color": "#384d54", "percent": 7.7 },
+    { "name": "Prisma", "bytes": 58000, "color": "#2d3748", "percent": 5.7 }
+  ],
+  "commitHours": [
+    0, 0, 0, 0, 0, 0, 2, 4, 12, 18, 22, 19, 14, 25, 32, 40, 48, 55, 62, 58, 42, 21, 8, 2
+  ],
+  "commitDays": [
+    32, 68, 74, 82, 88, 92, 50
+  ],
+  "recentEvents": [
+    {
+      "type": "PushEvent",
+      "repo": "snoopyjmX/snoopyjmX",
+      "message": "feat(assets): gerar ativos visuais estaticos dark e light",
+      "time": "há poucas horas",
+      "isPrivate": false
+    },
+    {
+      "type": "PushEvent",
+      "repo": "privado",
+      "message": "commit em repositório privado",
+      "time": "ontem",
+      "isPrivate": true
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "snoopyjmX/snoopyjmX",
+      "message": "docs: atualização do perfil de desenvolvedor",
+      "time": "há 2 dias",
+      "isPrivate": false
+    },
+    {
+      "type": "PushEvent",
+      "repo": "privado",
+      "message": "commit em repositório privado",
+      "time": "há 3 dias",
+      "isPrivate": true
+    },
+    {
+      "type": "PushEvent",
+      "repo": "snoopyjmX/snoopyjmX",
+      "message": "chore: setup inicial do repositório",
+      "time": "há 4 dias",
+      "isPrivate": false
+    },
+    {
+      "type": "PushEvent",
+      "repo": "privado",
+      "message": "commit em repositório privado",
+      "time": "há 5 dias",
+      "isPrivate": true
+    }
+  ]
+}
