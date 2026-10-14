@@ -247,8 +247,8 @@
   <g class="fade-in">
     
       <g>
-        <rect x="36" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
-        <title>0h: 0 commits</title>
+        <rect x="36" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>0h: 2 commits</title>
         <text x="43" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">0h</text>
       </g>
     
@@ -283,110 +283,110 @@
       </g>
     
       <g>
-        <rect x="156" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>6h: 2 commits</title>
+        <rect x="156" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>6h: 0 commits</title>
         <text x="163" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">6h</text>
       </g>
     
       <g>
-        <rect x="176" y="140" width="14" height="5" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>7h: 4 commits</title>
+        <rect x="176" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>7h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="196" y="130" width="14" height="15" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>8h: 12 commits</title>
+        <rect x="196" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>8h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="216" y="123" width="14" height="22" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>9h: 18 commits</title>
+        <rect x="216" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>9h: 0 commits</title>
         <text x="223" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">9h</text>
       </g>
     
       <g>
-        <rect x="236" y="118" width="14" height="27" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>10h: 22 commits</title>
+        <rect x="236" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>10h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="256" y="122" width="14" height="23" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>11h: 19 commits</title>
+        <rect x="256" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>11h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="276" y="128" width="14" height="17" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>12h: 14 commits</title>
+        <rect x="276" y="129" width="14" height="16" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>12h: 4 commits</title>
         <text x="283" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">12h</text>
       </g>
     
       <g>
-        <rect x="296" y="115" width="14" height="30" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>13h: 25 commits</title>
+        <rect x="296" y="141" width="14" height="4" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>13h: 1 commits</title>
         
       </g>
     
       <g>
-        <rect x="316" y="106" width="14" height="39" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>14h: 32 commits</title>
+        <rect x="316" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>14h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="336" y="97" width="14" height="48" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>15h: 40 commits</title>
+        <rect x="336" y="121" width="14" height="24" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>15h: 6 commits</title>
         <text x="343" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">15h</text>
       </g>
     
       <g>
-        <rect x="356" y="87" width="14" height="58" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>16h: 48 commits</title>
+        <rect x="356" y="70" width="14" height="75" rx="3" fill="#007799" opacity="1" />
+        <title>16h: 19 commits</title>
         
       </g>
     
       <g>
-        <rect x="376" y="78" width="14" height="67" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>17h: 55 commits</title>
+        <rect x="376" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>17h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="396" y="70" width="14" height="75" rx="3" fill="#007799" opacity="1" />
-        <title>18h: 62 commits</title>
+        <rect x="396" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>18h: 0 commits</title>
         <text x="403" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">18h</text>
       </g>
     
       <g>
-        <rect x="416" y="75" width="14" height="70" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>19h: 58 commits</title>
+        <rect x="416" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>19h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="436" y="94" width="14" height="51" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>20h: 42 commits</title>
+        <rect x="436" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>20h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="456" y="120" width="14" height="25" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>21h: 21 commits</title>
+        <rect x="456" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>21h: 2 commits</title>
         <text x="463" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">21h</text>
       </g>
     
       <g>
-        <rect x="476" y="135" width="14" height="10" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>22h: 8 commits</title>
+        <rect x="476" y="133" width="14" height="12" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>22h: 3 commits</title>
         
       </g>
     
       <g>
-        <rect x="496" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>23h: 2 commits</title>
+        <rect x="496" y="133" width="14" height="12" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>23h: 3 commits</title>
         
       </g>
     
@@ -396,44 +396,44 @@
   <g class="fade-in">
     
       <g>
-        <rect x="580" y="119" width="26" height="26" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Dom: 32 commits</title>
+        <rect x="580" y="131" width="26" height="14" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Dom: 6 commits</title>
         <text x="593" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Dom</text>
       </g>
     
       <g>
-        <rect x="618" y="90" width="26" height="55" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Seg: 68 commits</title>
+        <rect x="618" y="70" width="26" height="75" rx="3" fill="#007799" stroke="#e1e4e8" stroke-width="1" />
+        <title>Seg: 32 commits</title>
         <text x="631" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Seg</text>
       </g>
     
       <g>
-        <rect x="656" y="85" width="26" height="60" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Ter: 74 commits</title>
+        <rect x="656" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Ter: 1 commits</title>
         <text x="669" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Ter</text>
       </g>
     
       <g>
-        <rect x="694" y="78" width="26" height="67" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Qua: 82 commits</title>
+        <rect x="694" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Qua: 0 commits</title>
         <text x="707" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Qua</text>
       </g>
     
       <g>
-        <rect x="732" y="73" width="26" height="72" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Qui: 88 commits</title>
+        <rect x="732" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Qui: 0 commits</title>
         <text x="745" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Qui</text>
       </g>
     
       <g>
-        <rect x="770" y="70" width="26" height="75" rx="3" fill="#007799" stroke="#e1e4e8" stroke-width="1" />
-        <title>Sex: 92 commits</title>
+        <rect x="770" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Sex: 0 commits</title>
         <text x="783" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Sex</text>
       </g>
     
       <g>
-        <rect x="808" y="104" width="26" height="41" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Sáb: 50 commits</title>
+        <rect x="808" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Sáb: 1 commits</title>
         <text x="821" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Sáb</text>
       </g>
     

@@ -235,15 +235,11 @@
     <rect x="0" y="0" width="830" height="14" rx="4" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <g class="lang-bar">
       
-      <rect x="0" y="0" width="403" height="14" fill="#3178c6" rx="3" />
+      <rect x="0" y="0" width="735" height="14" fill="#3178c6" rx="3" />
     
-      <rect x="403" y="0" width="200" height="14" fill="#f7df1e" rx="0" />
+      <rect x="735" y="0" width="91" height="14" fill="#f1e05a" rx="0" />
     
-      <rect x="603" y="0" width="116" height="14" fill="#e38c00" rx="0" />
-    
-      <rect x="719" y="0" width="64" height="14" fill="#384d54" rx="0" />
-    
-      <rect x="783" y="0" width="47" height="14" fill="#2d3748" rx="3" />
+      <rect x="826" y="0" width="8" height="14" fill="#336790" rx="3" />
     
     </g>
   </g>
@@ -254,31 +250,19 @@
       <g transform="translate(20, 0)">
         <circle cx="5" cy="5" r="4" fill="#3178c6" />
         <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">TypeScript</text>
-        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">48.5%</text>
+        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">88.5%</text>
       </g>
     
       <g transform="translate(180, 0)">
-        <circle cx="5" cy="5" r="4" fill="#f7df1e" />
+        <circle cx="5" cy="5" r="4" fill="#f1e05a" />
         <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">JavaScript</text>
-        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">24.1%</text>
+        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">11%</text>
       </g>
     
       <g transform="translate(340, 0)">
-        <circle cx="5" cy="5" r="4" fill="#e38c00" />
-        <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">SQL</text>
-        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">14%</text>
-      </g>
-    
-      <g transform="translate(500, 0)">
-        <circle cx="5" cy="5" r="4" fill="#384d54" />
-        <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">Docker</text>
-        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">7.7%</text>
-      </g>
-    
-      <g transform="translate(660, 0)">
-        <circle cx="5" cy="5" r="4" fill="#2d3748" />
-        <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">Prisma</text>
-        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">5.7%</text>
+        <circle cx="5" cy="5" r="4" fill="#336790" />
+        <text x="15" y="8" fill="#1f2328" font-size="11" font-weight="600">PLpgSQL</text>
+        <text x="15" y="22" fill="#57606a" font-size="10" font-weight="500">0.5%</text>
       </g>
     
   </g>

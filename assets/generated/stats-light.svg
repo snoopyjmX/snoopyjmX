@@ -249,21 +249,21 @@
   <g transform="translate(24, 60)" class="count-anim">
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <text x="14" y="22" class="metric-label">COMMITS (ÚLTIMO ANO)</text>
-    <text x="14" y="48" class="metric-val" fill="#007799">486</text>
+    <text x="14" y="48" class="metric-val" fill="#007799">75</text>
   </g>
 
   <!-- Top Right: Pull Requests -->
   <g transform="translate(230, 60)" class="count-anim">
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <text x="14" y="22" class="metric-label">PULL REQUESTS</text>
-    <text x="14" y="48" class="metric-val">18</text>
+    <text x="14" y="48" class="metric-val">34</text>
   </g>
 
   <!-- Bottom Left: Issues -->
   <g transform="translate(24, 134)" class="count-anim">
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <text x="14" y="22" class="metric-label">ISSUES RESOLVIDAS</text>
-    <text x="14" y="48" class="metric-val">7</text>
+    <text x="14" y="48" class="metric-val">0</text>
   </g>
 
   <!-- Bottom Right: Repos / Stars -->
@@ -271,8 +271,8 @@
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <text x="14" y="22" class="metric-label">REPOSITÓRIOS</text>
     <text x="14" y="48" class="metric-val">
-      14
-      <tspan font-size="11" font-weight="500" fill="#6e7781"> (9 pub · 5 priv)</tspan>
+      4
+      <tspan font-size="11" font-weight="500" fill="#6e7781"> (4 pub · 0 priv)</tspan>
     </text>
   </g>
 </svg>
