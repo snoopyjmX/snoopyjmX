@@ -18,11 +18,15 @@
 
 <!-- Badges de Contato e Acesso Rápido -->
 <p align="center">
-  <a href="{{LINKEDIN_URL}}" title="Conectar no LinkedIn">
+  <a href="https://www.linkedin.com/in/jo%C3%A3omarcelos/" title="Conectar no LinkedIn">
     <img src="https://img.shields.io/badge/LinkedIn-0a0e14?style=for-the-badge&logo=linkedin&logoColor=00e5ff&labelColor=0d1117" alt="Badge do LinkedIn">
   </a>
   &nbsp;
-  <a href="mailto:{{EMAIL}}" title="Enviar e-mail para João Marcelo">
+  <a href="https://portfolio-eight-azure-m62na8bqo9.vercel.app/" title="Ver Portfólio Online">
+    <img src="https://img.shields.io/badge/Portfolio-0a0e14?style=for-the-badge&logo=vercel&logoColor=00e5ff&labelColor=0d1117" alt="Badge do Portfólio">
+  </a>
+  &nbsp;
+  <a href="mailto:joaogarces.dev@gmail.com" title="Enviar e-mail para João Marcelo">
     <img src="https://img.shields.io/badge/E--mail-0a0e14?style=for-the-badge&logo=gmail&logoColor=00e5ff&labelColor=0d1117" alt="Badge de E-mail">
   </a>
   &nbsp;
@@ -100,6 +104,7 @@ const joao: Developer = {
   },
   interesses: [
     "Aplicações web modernas com foco em performance e DX",
+    "Inteligência Artificial aplicada e engenharia de prompt",
     "Arquitetura resiliente e suítes completas de testes automatizados",
     "Design systems consistentes e acessibilidade real (WCAG)",
     "Pipelines de integração contínua e automação de deploy"
@@ -138,16 +143,18 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
 <table width="100%" align="center" border="0" cellpadding="0" cellspacing="8">
   <tr>
     <td width="33.3%" align="center" valign="top">
-      <!-- Sillage: repositório privado (em refinamento, sem link) -->
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="./assets/card-sillage-dark.svg">
-        <source media="(prefers-color-scheme: light)" srcset="./assets/card-sillage-light.svg">
-        <img src="./assets/card-sillage.svg" alt="Card do projeto Sillage" width="100%">
-      </picture>
+      <!-- Sillage: em produção na Vercel (repositório privado em refinamento) -->
+      <a href="https://sillage-jm-x.vercel.app/" title="Acessar Sillage (PWA em Produção)">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/card-sillage-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="./assets/card-sillage-light.svg">
+          <img src="./assets/card-sillage.svg" alt="Card do projeto Sillage" width="100%">
+        </picture>
+      </a>
     </td>
     <td width="33.3%" align="center" valign="top">
       <!-- NÓS: em produção na Vercel -->
-      <a href="{{URL_NOS_PRODUCAO}}" title="Acessar NÓS (PWA em Produção)">
+      <a href="https://nos-app-v1.vercel.app/welcome" title="Acessar NÓS (PWA em Produção)">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="./assets/card-nos-dark.svg">
           <source media="(prefers-color-scheme: light)" srcset="./assets/card-nos-light.svg">
@@ -157,7 +164,7 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
     </td>
     <td width="33.3%" align="center" valign="top">
       <!-- Paggo.AI: TCC em equipe -->
-      <a href="{{REPO_PAGGO}}" title="Ver repositório do Paggo.AI">
+      <a href="https://github.com/renanrodriguescodes/Paggo" title="Ver repositório do Paggo.AI">
         <picture>
           <source media="(prefers-color-scheme: dark)" srcset="./assets/card-paggo-dark.svg">
           <source media="(prefers-color-scheme: light)" srcset="./assets/card-paggo-light.svg">
@@ -183,8 +190,9 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
 | **Acessibilidade** | axe-core | Conformidade WCAG AA |
 | **Integração Contínua** | GitHub Actions | Pipeline em cada PR |
 
+  <p><b>Deploy em produção:</b> <a href="https://sillage-jm-x.vercel.app/"><code>https://sillage-jm-x.vercel.app/</code></a></p>
   <p><b>Status atual:</b> Fases 1 a 4 de 12 concluídas. Próxima etapa: preview por PR via Vercel e fluxo de autenticação.</p>
-  <p><i>Nota: Repositório privado em fase de refinamento arquitetural.</i></p>
+  <p><i>Nota: Repositório de código privado em fase de refinamento arquitetural.</i></p>
   <!-- <img src="./assets/demo-sillage.gif" alt="Demonstração do Sillage" width="100%"> -->
 </details>
 
@@ -203,7 +211,8 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
     <li>Auditoria contínua de dependências contra vulnerabilidades conhecidas.</li>
     <li>Redesign completo com sistema de design proprietário e micro-interações fluidas via Reanimated.</li>
   </ul>
-  <p><b>Deploy:</b> Em produção como PWA na Vercel: <a href="{{URL_NOS_PRODUCAO}}"><code>{{URL_NOS_PRODUCAO}}</code></a></p>
+  <p><b>Deploy:</b> Em produção como PWA na Vercel: <a href="https://nos-app-v1.vercel.app/welcome"><code>https://nos-app-v1.vercel.app/welcome</code></a></p>
+  <p><b>Repositório:</b> <a href="https://github.com/snoopyjmX/nos-app"><code>github.com/snoopyjmX/nos-app</code></a></p>
   <!-- <img src="./assets/demo-nos.gif" alt="Demonstração do NÓS" width="100%"> -->
 </details>
 
@@ -220,7 +229,7 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
     <li>Implementação e liderança de QA (garantia de qualidade de interface e testes de integração com APIs).</li>
     <li>Renderização de relatórios analíticos dinâmicos e dashboards preditivos com Recharts.</li>
   </ul>
-  <p><b>Repositório:</b> <a href="{{REPO_PAGGO}}"><code>{{REPO_PAGGO}}</code></a></p>
+  <p><b>Repositório:</b> <a href="https://github.com/renanrodriguescodes/Paggo"><code>github.com/renanrodriguescodes/Paggo</code></a></p>
   <!-- <img src="./assets/demo-paggo.gif" alt="Demonstração do Paggo.AI" width="100%"> -->
 </details>
 
@@ -391,10 +400,11 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
 
 </div>
 
-Se você tem interesse em colaborar em projetos de código aberto, discutir arquitetura de aplicações ou trocar experiências sobre desenvolvimento full-stack e engenharia de software, entre em contato:
+Se você tem interesse em colaborar em projetos de código aberto, discutir arquitetura de aplicações, inteligência artificial ou trocar experiências sobre desenvolvimento full-stack e engenharia de software, entre em contato:
 
-- **LinkedIn:** [{{LINKEDIN_URL}}]({{LINKEDIN_URL}})
-- **E-mail:** [{{EMAIL}}](mailto:{{EMAIL}})
+- **LinkedIn:** [linkedin.com/in/joãomarcelos](https://www.linkedin.com/in/jo%C3%A3omarcelos/)
+- **Portfólio:** [portfolio-eight-azure-m62na8bqo9.vercel.app](https://portfolio-eight-azure-m62na8bqo9.vercel.app/)
+- **E-mail:** [joaogarces.dev@gmail.com](mailto:joaogarces.dev@gmail.com)
 - **GitHub:** [github.com/snoopyjmX](https://github.com/snoopyjmX)
 - **Localização:** Goiânia, Goiás — Brasil
 

@@ -216,8 +216,8 @@
   <!-- Animated Phrases -->
   <g transform="translate(48, 31)" class="typing-container">
     <text class="phrase p1" x="0" y="0">Desenvolvendo aplicações web e mobile com React, TypeScript e Node.js.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
-    <text class="phrase p2" x="0" y="0">Foco em código limpo, arquitetura sólida e testes automatizados.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
-    <text class="phrase p3" x="0" y="0">Explorando CI/CD, Docker e boas práticas de entrega contínua.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
+    <text class="phrase p2" x="0" y="0">Interesse em IA aplicada, engenharia de prompt e arquitetura moderna.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
+    <text class="phrase p3" x="0" y="0">Foco em código limpo, testes automatizados e entrega contínua.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
     <text class="phrase p4" x="0" y="0">Sempre aprendendo na prática, construindo projetos reais.<tspan fill="#00e5ff" class="cursor"> ▌</tspan></text>
   </g>
 </svg>

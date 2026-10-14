@@ -145,8 +145,8 @@ export function generateTypingSvg(themeName = 'dark') {
   // 4 phrases
   const phrases = [
     'Desenvolvendo aplicações web e mobile com React, TypeScript e Node.js.',
-    'Foco em código limpo, arquitetura sólida e testes automatizados.',
-    'Explorando CI/CD, Docker e boas práticas de entrega contínua.',
+    'Interesse em IA aplicada, engenharia de prompt e arquitetura moderna.',
+    'Foco em código limpo, testes automatizados e entrega contínua.',
     'Sempre aprendendo na prática, construindo projetos reais.'
   ];
 
