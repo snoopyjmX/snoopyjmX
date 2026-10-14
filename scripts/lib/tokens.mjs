@@ -78,3 +78,4 @@ export function getCornerBrackets(x, y, w, h, size = 8, color = null) {
     </g>
   `;
 }
+

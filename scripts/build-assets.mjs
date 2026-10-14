@@ -753,3 +753,4 @@ export function buildAllAssets(options = {}) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   buildAllAssets();
 }
+

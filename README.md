@@ -27,7 +27,7 @@
   </a>
   &nbsp;
   <a href="https://github.com/snoopyjmX?tab=repositories" title="Ver repositórios de João Marcelo">
-    <img src="https://img.shields.io/badge/Repositórios-0a0e14?style=for-the-badge&logo=github&logoColor=00e5ff&labelColor=0d1117" alt="Badge de Repositórios">
+    <img src="https://img.shields.io/badge/Repositorios-0a0e14?style=for-the-badge&logo=github&logoColor=00e5ff&labelColor=0d1117" alt="Badge de Repositórios">
   </a>
 </p>
 

@@ -66,3 +66,4 @@ jobs:
             git commit -m "chore: atualiza estatisticas do perfil [skip ci]"
             git push origin main
           fi
+

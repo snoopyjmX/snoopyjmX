@@ -49,15 +49,13 @@ export function createBaseStyles(theme) {
       animation: pulse-glow 3.5s ease-in-out infinite;
     }
 
-    /* Staggered entrance reveal */
+    /* Staggered entrance reveal (opacity only to preserve SVG translate transforms) */
     @keyframes fade-in-up {
       from {
         opacity: 0;
-        transform: translateY(6px);
       }
       to {
         opacity: 1;
-        transform: translateY(0);
       }
     }
 
@@ -75,26 +73,20 @@ export function createBaseStyles(theme) {
     /* Very subtle rare glitch (1x every 8s, 0.3s duration) */
     @keyframes subtle-glitch {
       0%, 96%, 100% {
-        transform: translate(0, 0);
         opacity: 1;
-        text-shadow: none;
       }
       97% {
-        transform: translate(-1.5px, 0.5px);
-        text-shadow: 1px 0 var(--accent), -1px 0 var(--accent-sec);
+        opacity: 0.75;
       }
       98% {
-        transform: translate(1.5px, -0.5px);
-        text-shadow: -1px 0 var(--accent), 1px 0 var(--accent-sec);
+        opacity: 0.9;
       }
       99% {
-        transform: translate(0, 0);
-        text-shadow: none;
+        opacity: 1;
       }
     }
 
     .glitch-text {
-      display: inline-block;
       animation: subtle-glitch 8s infinite ease-in-out;
     }
 
@@ -259,3 +251,4 @@ export function renderProgressBar({ x, y, width, height = 7, current, total, lab
     </g>
   `;
 }
+
