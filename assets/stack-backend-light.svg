@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240" role="img" aria-label="Painel de Stack: Back-end">
+  <title>Stack // Back-end (30% foco de estudo)</title>
+  <style>
+    :root {
+      --bg: #f6f8fa;
+      --surface: #ffffff;
+      --surface-subtle: #eaeef2;
+      --border: #d0d7de;
+      --border-subtle: #e1e4e8;
+      --text: #1f2328;
+      --text-sec: #57606a;
+      --text-ter: #6e7781;
+      --accent: #007799;
+      --accent-subtle: rgba(0, 119, 153, 0.10);
+      --accent-glow: rgba(0, 119, 153, 0.20);
+      --accent-sec: #6544d6;
+      --accent-sec-subtle: rgba(101, 68, 214, 0.10);
+      --success: #1a7f37;
+      --font-mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    text {
+      font-family: var(--font-mono);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Pulse animation for status dots */
+    @keyframes pulse-glow {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.45;
+        transform: scale(0.85);
+      }
+    }
+
+    .pulse {
+      transform-origin: center;
+      animation: pulse-glow 3.5s ease-in-out infinite;
+    }
+
+    /* Staggered entrance reveal */
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    /* Stroke draw effect */
+    @keyframes draw-line {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    /* Very subtle rare glitch (1x every 8s, 0.3s duration) */
+    @keyframes subtle-glitch {
+      0%, 96%, 100% {
+        transform: translate(0, 0);
+        opacity: 1;
+        text-shadow: none;
+      }
+      97% {
+        transform: translate(-1.5px, 0.5px);
+        text-shadow: 1px 0 var(--accent), -1px 0 var(--accent-sec);
+      }
+      98% {
+        transform: translate(1.5px, -0.5px);
+        text-shadow: -1px 0 var(--accent), 1px 0 var(--accent-sec);
+      }
+      99% {
+        transform: translate(0, 0);
+        text-shadow: none;
+      }
+    }
+
+    .glitch-text {
+      display: inline-block;
+      animation: subtle-glitch 8s infinite ease-in-out;
+    }
+
+    /* Scanline traversing effect */
+    @keyframes scanline-sweep {
+      0% {
+        transform: translateY(-20px);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.6;
+      }
+      90% {
+        opacity: 0.6;
+      }
+      100% {
+        transform: translateY(300px);
+        opacity: 0;
+      }
+    }
+
+    .scanline {
+      animation: scanline-sweep 7s linear infinite;
+    }
+
+    /* Traveling light dot */
+    @keyframes travel-dot {
+      0% {
+        transform: translateX(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 0.9;
+      }
+      90% {
+        opacity: 0.9;
+      }
+      100% {
+        transform: translateX(1100px);
+        opacity: 0;
+      }
+    }
+
+    /* Cursor blink */
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    .cursor {
+      animation: blink 1.1s infinite steps(1);
+    }
+
+    /* Accessibility: prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, .pulse, .fade-in, .glitch-text, .scanline, .cursor, .animated-stroke {
+        animation: none !important;
+        transition: none !important;
+        opacity: 1 !important;
+        stroke-dashoffset: 0 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+  
+    <defs>
+      <!-- Cyberpunk Radial Ambient Glow -->
+      <radialGradient id="ambientGlow" cx="80%" cy="20%" r="70%">
+        <stop offset="0%" stop-color="#6544d6" stop-opacity="0.07" />
+        <stop offset="100%" stop-color="#f6f8fa" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Linear Accent Accent Line Gradient -->
+      <linearGradient id="cyanLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#007799" stop-opacity="0" />
+        <stop offset="30%" stop-color="#007799" stop-opacity="0.9" />
+        <stop offset="70%" stop-color="#6544d6" stop-opacity="0.9" />
+        <stop offset="100%" stop-color="#6544d6" stop-opacity="0" />
+      </linearGradient>
+
+      <!-- Subtle Card Header Gradient -->
+      <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#eaeef2" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="0.95" />
+      </linearGradient>
+
+      <!-- Scanline Pattern -->
+      <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+        <line x1="0" y1="0" x2="100" y2="0" stroke="rgba(87, 96, 106, 0.06)" stroke-width="1" />
+      </pattern>
+
+      <!-- Subtle Dot Matrix Grid -->
+      <pattern id="cyberGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+        <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(87, 96, 106, 0.06)" stroke-width="0.75" />
+      </pattern>
+    </defs>
+  
+
+  
+    <!-- Card Frame -->
+    <rect x="0" y="0" width="380" height="240" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2" />
+    <rect x="1" y="1" width="378" height="238" rx="11" fill="url(#ambientGlow)" />
+    <rect x="4" y="4" width="372" height="232" rx="10" fill="url(#cyberGrid)" />
+    
+    <g class="corner-brackets" stroke="#007799" stroke-width="1.5" fill="none">
+      <!-- Top Left -->
+      <path d="M 2 10 L 2 2 L 10 2" />
+      <!-- Top Right -->
+      <path d="M 370 2 L 378 2 L 378 10" />
+      <!-- Bottom Left -->
+      <path d="M 2 230 L 2 238 L 10 238" />
+      <!-- Bottom Right -->
+      <path d="M 370 238 L 378 238 L 378 230" />
+    </g>
+  
+
+    
+      <!-- Card Header Line -->
+      <line x1="16" y1="38" x2="364" y2="38" stroke="#e1e4e8" stroke-width="1" />
+    
+
+    
+      <text x="20" y="26" fill="#1f2328" font-size="14" font-weight="700" letter-spacing="1">
+        03.2 // BACK-END
+      </text>
+    
+
+    
+      <g transform="translate(360, 22)">
+        <text x="-10" y="3" fill="#6544d6" font-size="11" font-weight="600" text-anchor="end" letter-spacing="0.5">
+          30% FOCO
+        </text>
+        <circle cx="0" cy="0" r="4" fill="#6544d6" class="" />
+        <circle cx="0" cy="0" r="6" fill="#6544d6" opacity="0.3" class="" />
+      </g>
+    
+  
+
+  <!-- Legend -->
+  <g transform="translate(20, 56)">
+    <circle cx="6" cy="6" r="3" fill="#007799" />
+    <text x="16" y="9" fill="#6e7781" font-size="10" font-weight="600">● EM USO EM PROJETOS ATIVOS</text>
+  </g>
+
+  <!-- Chips Grid -->
+  <g transform="translate(20, 76)">
+    <!-- Row 1 -->
+    
+    <g class="chip">
+      <rect x="0" y="0" width="105" height="22" rx="5" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+      
+      <circle cx="9" cy="11" r="3" fill="#007799" />
+    
+      <text x="59.5" y="15" fill="#57606a" font-size="11" text-anchor="middle" font-weight="500">
+        Node.js
+      </text>
+    </g>
+  
+    
+    <g class="chip">
+      <rect x="115" y="0" width="105" height="22" rx="5" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+      
+      <circle cx="124" cy="11" r="3" fill="#007799" />
+    
+      <text x="174.5" y="15" fill="#57606a" font-size="11" text-anchor="middle" font-weight="500">
+        Express
+      </text>
+    </g>
+  
+    
+    <g class="chip">
+      <rect x="230" y="0" width="110" height="22" rx="5" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+      
+      <circle cx="239" cy="11" r="3" fill="#007799" />
+    
+      <text x="292" y="15" fill="#57606a" font-size="11" text-anchor="middle" font-weight="500">
+        PostgreSQL
+      </text>
+    </g>
+  
+
+    <!-- Row 2 -->
+    
+    <g class="chip">
+      <rect x="0" y="34" width="120" height="22" rx="5" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+      
+      <circle cx="9" cy="45" r="3" fill="#007799" />
+    
+      <text x="67" y="49" fill="#57606a" font-size="11" text-anchor="middle" font-weight="500">
+        Prisma ORM
+      </text>
+    </g>
+  
+    
+    <g class="chip">
+      <rect x="130" y="34" width="115" height="22" rx="5" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+      
+      <circle cx="139" cy="45" r="3" fill="#007799" />
+    
+      <text x="194.5" y="49" fill="#57606a" font-size="11" text-anchor="middle" font-weight="500">
+        Supabase
+      </text>
+    </g>
+  
+  </g>
+
+  <!-- Track note -->
+  <g transform="translate(20, 206)">
+    <text x="0" y="0" fill="#6e7781" font-size="10" font-weight="500">APIs RESTful, bancos relacionais e BaaS moderno</text>
+  </g>
+</svg>
