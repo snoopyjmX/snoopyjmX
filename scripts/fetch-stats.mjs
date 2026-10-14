@@ -8,6 +8,7 @@ import {
   generateHeatmapSvg,
   generateHoursSvg
 } from './lib/stats-svg.mjs';
+import { escapeXml } from './lib/tokens.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
