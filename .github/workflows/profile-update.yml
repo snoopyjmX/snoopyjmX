@@ -1,0 +1,68 @@
+name: Atualização de Estatísticas e Perfil
+
+on:
+  schedule:
+    # Executa todos os dias às 00:00 no Horário de Brasília (03:00 UTC)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - 'design/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/profile-update.yml'
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-profile:
+    name: Gerar Métricas e Atualizar Perfil
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout do Repositório
+        # Fixado em v4.2.2 para estabilidade e reprodutibilidade de CI
+        uses: actions/checkout@v4.2.2
+        with:
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configurar Node.js 20 com Cache
+        # Fixado em v4.2.0 com suporte a cache nativo do npm
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Instalar Dependências
+        run: npm ci
+
+      - name: Coletar Métricas e Atualizar SVGs de Atividade
+        env:
+          METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-stats.mjs
+
+      - name: Reconstruir Ativos Visuais e Carimbo de Data
+        run: npm run build:assets
+
+      - name: Commitar e Fazer Push das Atualizações
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/ README.md
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração detectada nas métricas ou ativos. Pulando commit."
+          else
+            git commit -m "chore: atualiza estatisticas do perfil [skip ci]"
+            git push origin main
+          fi
