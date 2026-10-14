@@ -1,0 +1,24 @@
+{
+  "name": "snoopyjmx-profile",
+  "version": "1.0.0",
+  "description": "Cyberpunk professional profile README for João Marcelo Garcês (@snoopyjmX)",
+  "type": "module",
+  "scripts": {
+    "build:assets": "node scripts/build-assets.mjs",
+    "fetch:stats": "node scripts/fetch-stats.mjs",
+    "verify:svg": "node scripts/verify-svgs.mjs",
+    "verify:render": "node scripts/render-previews.mjs",
+    "test": "npm run build:assets && npm run verify:svg"
+  },
+  "keywords": [
+    "github-profile",
+    "cyberpunk",
+    "readme"
+  ],
+  "author": "João Marcelo Garcês",
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.49.0"
+  }
+}
+

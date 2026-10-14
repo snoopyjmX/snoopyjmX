@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.*
+*.local
+design/preview/
+.DS_Store
+
