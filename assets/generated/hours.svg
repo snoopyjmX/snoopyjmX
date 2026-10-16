@@ -247,7 +247,7 @@
   <g class="fade-in">
     
       <g>
-        <rect x="36" y="136" width="14" height="9" rx="3" fill="#7c5cff" opacity="0.8" />
+        <rect x="36" y="131" width="14" height="14" rx="3" fill="#7c5cff" opacity="0.8" />
         <title>0h: 2 commits</title>
         <text x="43" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">0h</text>
       </g>
@@ -319,13 +319,13 @@
       </g>
     
       <g>
-        <rect x="276" y="132" width="14" height="13" rx="3" fill="#7c5cff" opacity="0.8" />
+        <rect x="276" y="125" width="14" height="20" rx="3" fill="#7c5cff" opacity="0.8" />
         <title>12h: 3 commits</title>
         <text x="283" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">12h</text>
       </g>
     
       <g>
-        <rect x="296" y="141" width="14" height="4" rx="3" fill="#7c5cff" opacity="0.8" />
+        <rect x="296" y="138" width="14" height="7" rx="3" fill="#7c5cff" opacity="0.8" />
         <title>13h: 1 commits</title>
         
       </g>
@@ -337,14 +337,14 @@
       </g>
     
       <g>
-        <rect x="336" y="132" width="14" height="13" rx="3" fill="#7c5cff" opacity="0.8" />
+        <rect x="336" y="125" width="14" height="20" rx="3" fill="#7c5cff" opacity="0.8" />
         <title>15h: 3 commits</title>
         <text x="343" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">15h</text>
       </g>
     
       <g>
-        <rect x="356" y="70" width="14" height="75" rx="3" fill="#00e5ff" opacity="1" />
-        <title>16h: 17 commits</title>
+        <rect x="356" y="104" width="14" height="41" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>16h: 6 commits</title>
         
       </g>
     
@@ -367,26 +367,26 @@
       </g>
     
       <g>
-        <rect x="436" y="136" width="14" height="9" rx="3" fill="#7c5cff" opacity="0.8" />
-        <title>20h: 2 commits</title>
+        <rect x="436" y="125" width="14" height="20" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>20h: 3 commits</title>
         
       </g>
     
       <g>
-        <rect x="456" y="141" width="14" height="4" rx="3" fill="#7c5cff" opacity="0.8" />
-        <title>21h: 1 commits</title>
+        <rect x="456" y="131" width="14" height="14" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>21h: 2 commits</title>
         <text x="463" y="161" fill="#6e7681" font-size="9" font-weight="600" text-anchor="middle">21h</text>
       </g>
     
       <g>
-        <rect x="476" y="132" width="14" height="13" rx="3" fill="#7c5cff" opacity="0.8" />
-        <title>22h: 3 commits</title>
+        <rect x="476" y="131" width="14" height="14" rx="3" fill="#7c5cff" opacity="0.8" />
+        <title>22h: 2 commits</title>
         
       </g>
     
       <g>
-        <rect x="496" y="132" width="14" height="13" rx="3" fill="#7c5cff" opacity="0.8" />
-        <title>23h: 3 commits</title>
+        <rect x="496" y="70" width="14" height="75" rx="3" fill="#00e5ff" opacity="1" />
+        <title>23h: 11 commits</title>
         
       </g>
     
@@ -396,26 +396,26 @@
   <g class="fade-in">
     
       <g>
-        <rect x="580" y="128" width="26" height="17" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
-        <title>Dom: 6 commits</title>
+        <rect x="580" y="125" width="26" height="20" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Dom: 4 commits</title>
         <text x="593" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Dom</text>
       </g>
     
       <g>
         <rect x="618" y="70" width="26" height="75" rx="3" fill="#00e5ff" stroke="#21262d" stroke-width="1" />
-        <title>Seg: 26 commits</title>
+        <title>Seg: 15 commits</title>
         <text x="631" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Seg</text>
       </g>
     
       <g>
-        <rect x="656" y="142" width="26" height="3" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
-        <title>Ter: 1 commits</title>
+        <rect x="656" y="90" width="26" height="55" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Ter: 11 commits</title>
         <text x="669" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Ter</text>
       </g>
     
       <g>
-        <rect x="694" y="139" width="26" height="6" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
-        <title>Qua: 2 commits</title>
+        <rect x="694" y="130" width="26" height="15" rx="3" fill="#161b22" stroke="#21262d" stroke-width="1" />
+        <title>Qua: 3 commits</title>
         <text x="707" y="161" fill="#8b949e" font-size="9" font-weight="600" text-anchor="middle">Qua</text>
       </g>
     

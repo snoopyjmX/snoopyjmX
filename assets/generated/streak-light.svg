@@ -162,7 +162,7 @@
       stroke-width: 8;
       stroke-linecap: round;
       stroke-dasharray: 238.76;
-      stroke-dashoffset: 191;
+      stroke-dashoffset: 239;
       transform: rotate(-90deg);
       transform-origin: 75px 125px;
       animation: draw-line 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -247,7 +247,7 @@
     <circle cx="75" cy="125" r="38" class="ring-track" />
     <circle cx="75" cy="125" r="38" class="ring-fill" />
     <text x="75" y="129" fill="#1f2328" font-size="20" font-weight="800" text-anchor="middle">
-      1
+      0
     </text>
     <text x="75" y="142" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">
       DIAS
@@ -260,7 +260,7 @@
     <rect x="0" y="0" width="256" height="60" rx="6" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
     <text x="14" y="22" fill="#57606a" font-size="9.5" font-weight="700" letter-spacing="0.8">SEQUÊNCIA ATUAL</text>
     <text x="14" y="48" fill="#007799" font-size="22" font-weight="800">
-      1 <tspan font-size="12" font-weight="600" fill="#57606a">dias consecutivos</tspan>
+      0 <tspan font-size="12" font-weight="600" fill="#57606a">dias consecutivos</tspan>
     </text>
   </g>
 
