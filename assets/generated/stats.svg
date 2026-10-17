@@ -249,14 +249,14 @@
   <g transform="translate(24, 60)" class="count-anim">
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1" />
     <text x="14" y="22" class="metric-label">COMMITS (ÚLTIMO ANO)</text>
-    <text x="14" y="48" class="metric-val" fill="#00e5ff">75</text>
+    <text x="14" y="48" class="metric-val" fill="#00e5ff">236</text>
   </g>
 
   <!-- Top Right: Pull Requests -->
   <g transform="translate(230, 60)" class="count-anim">
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1" />
     <text x="14" y="22" class="metric-label">PULL REQUESTS</text>
-    <text x="14" y="48" class="metric-val">34</text>
+    <text x="14" y="48" class="metric-val">60</text>
   </g>
 
   <!-- Bottom Left: Issues -->
@@ -271,8 +271,8 @@
     <rect x="0" y="0" width="186" height="60" rx="6" fill="#161b22" stroke="#21262d" stroke-width="1" />
     <text x="14" y="22" class="metric-label">REPOSITÓRIOS</text>
     <text x="14" y="48" class="metric-val">
-      4
-      <tspan font-size="11" font-weight="500" fill="#6e7681"> (4 pub · 0 priv)</tspan>
+      5
+      <tspan font-size="11" font-weight="500" fill="#6e7681"> (5 pub · 0 priv)</tspan>
     </text>
   </g>
 </svg>
