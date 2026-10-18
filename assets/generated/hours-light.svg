@@ -325,8 +325,8 @@
       </g>
     
       <g>
-        <rect x="296" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
-        <title>13h: 0 commits</title>
+        <rect x="296" y="139" width="14" height="6" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>13h: 1 commits</title>
         
       </g>
     
@@ -373,8 +373,8 @@
       </g>
     
       <g>
-        <rect x="456" y="132" width="14" height="13" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>21h: 2 commits</title>
+        <rect x="456" y="139" width="14" height="6" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>21h: 1 commits</title>
         <text x="463" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">21h</text>
       </g>
     
@@ -396,8 +396,8 @@
   <g class="fade-in">
     
       <g>
-        <rect x="580" y="111" width="26" height="34" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Dom: 5 commits</title>
+        <rect x="580" y="118" width="26" height="27" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Dom: 4 commits</title>
         <text x="593" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Dom</text>
       </g>
     
@@ -426,8 +426,8 @@
       </g>
     
       <g>
-        <rect x="770" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Sex: 0 commits</title>
+        <rect x="770" y="138" width="26" height="7" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Sex: 1 commits</title>
         <text x="783" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Sex</text>
       </g>
     
