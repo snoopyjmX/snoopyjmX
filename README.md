@@ -351,12 +351,12 @@ Construo software com foco em usabilidade, estabilidade e arquitetura sustentáv
 ### Atividade Recente
 
 <!-- ACTIVITY:START -->
-- [`snoopyjmX/sillage`](https://github.com/snoopyjmX/sillage) — **push de commits** <kbd>há 18 dias</kbd>
-- [`snoopyjmX/sillage`](https://github.com/snoopyjmX/sillage) — **atividade de desenvolvimento** <kbd>há 29 dias</kbd>
-- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **criou branch em snoopyjmX/snoopyjmX** <kbd>há 19 dias</kbd>
-- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **push de commits** <kbd>há 19 dias</kbd>
-- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **criou branch em snoopyjmX/snoopyjmX** <kbd>há 19 dias</kbd>
-- [`snoopyjmX/nexus-it`](https://github.com/snoopyjmX/nexus-it) — **atividade de desenvolvimento** <kbd>há 20 dias</kbd>
+- [`snoopyjmX/sillage`](https://github.com/snoopyjmX/sillage) — **push de commits** <kbd>há 20 dias</kbd>
+- [`snoopyjmX/sillage`](https://github.com/snoopyjmX/sillage) — **atividade de desenvolvimento** <kbd>há 1 meses</kbd>
+- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **criou branch em snoopyjmX/snoopyjmX** <kbd>há 21 dias</kbd>
+- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **push de commits** <kbd>há 21 dias</kbd>
+- [`snoopyjmX/snoopyjmX`](https://github.com/snoopyjmX/snoopyjmX) — **criou branch em snoopyjmX/snoopyjmX** <kbd>há 21 dias</kbd>
+- [`snoopyjmX/nexus-it`](https://github.com/snoopyjmX/nexus-it) — **atividade de desenvolvimento** <kbd>há 22 dias</kbd>
 <!-- ACTIVITY:END -->
 
 <br>
