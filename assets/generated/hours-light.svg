@@ -337,14 +337,14 @@
       </g>
     
       <g>
-        <rect x="336" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>15h: 1 commits</title>
+        <rect x="336" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>15h: 0 commits</title>
         <text x="343" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">15h</text>
       </g>
     
       <g>
-        <rect x="356" y="112" width="14" height="33" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>16h: 4 commits</title>
+        <rect x="356" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>16h: 0 commits</title>
         
       </g>
     
@@ -402,8 +402,8 @@
       </g>
     
       <g>
-        <rect x="618" y="107" width="26" height="38" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Seg: 5 commits</title>
+        <rect x="618" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Seg: 0 commits</title>
         <text x="631" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Seg</text>
       </g>
     
