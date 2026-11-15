@@ -325,7 +325,7 @@
       </g>
     
       <g>
-        <rect x="296" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
+        <rect x="296" y="120" width="14" height="25" rx="3" fill="#6544d6" opacity="0.8" />
         <title>13h: 1 commits</title>
         
       </g>
@@ -367,26 +367,26 @@
       </g>
     
       <g>
-        <rect x="436" y="103" width="14" height="42" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>20h: 5 commits</title>
+        <rect x="436" y="70" width="14" height="75" rx="3" fill="#007799" opacity="1" />
+        <title>20h: 3 commits</title>
         
       </g>
     
       <g>
-        <rect x="456" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>21h: 1 commits</title>
+        <rect x="456" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>21h: 0 commits</title>
         <text x="463" y="161" fill="#6e7781" font-size="9" font-weight="600" text-anchor="middle">21h</text>
       </g>
     
       <g>
-        <rect x="476" y="137" width="14" height="8" rx="3" fill="#6544d6" opacity="0.8" />
-        <title>22h: 1 commits</title>
+        <rect x="476" y="142" width="14" height="3" rx="3" fill="#6544d6" opacity="0.2" />
+        <title>22h: 0 commits</title>
         
       </g>
     
       <g>
-        <rect x="496" y="70" width="14" height="75" rx="3" fill="#007799" opacity="1" />
-        <title>23h: 9 commits</title>
+        <rect x="496" y="120" width="14" height="25" rx="3" fill="#6544d6" opacity="0.8" />
+        <title>23h: 1 commits</title>
         
       </g>
     
@@ -396,7 +396,7 @@
   <g class="fade-in">
     
       <g>
-        <rect x="580" y="137" width="26" height="8" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <rect x="580" y="120" width="26" height="25" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
         <title>Dom: 1 commits</title>
         <text x="593" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Dom</text>
       </g>
@@ -408,14 +408,14 @@
       </g>
     
       <g>
-        <rect x="656" y="70" width="26" height="75" rx="3" fill="#007799" stroke="#e1e4e8" stroke-width="1" />
-        <title>Ter: 10 commits</title>
+        <rect x="656" y="142" width="26" height="3" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <title>Ter: 0 commits</title>
         <text x="669" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Ter</text>
       </g>
     
       <g>
-        <rect x="694" y="107" width="26" height="38" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
-        <title>Qua: 5 commits</title>
+        <rect x="694" y="70" width="26" height="75" rx="3" fill="#007799" stroke="#e1e4e8" stroke-width="1" />
+        <title>Qua: 3 commits</title>
         <text x="707" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Qua</text>
       </g>
     
@@ -426,7 +426,7 @@
       </g>
     
       <g>
-        <rect x="770" y="137" width="26" height="8" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
+        <rect x="770" y="120" width="26" height="25" rx="3" fill="#eaeef2" stroke="#e1e4e8" stroke-width="1" />
         <title>Sex: 1 commits</title>
         <text x="783" y="161" fill="#57606a" font-size="9" font-weight="600" text-anchor="middle">Sex</text>
       </g>
